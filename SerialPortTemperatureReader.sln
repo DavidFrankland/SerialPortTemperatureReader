@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDisplay", "ConsoleDisplay\ConsoleDisplay.csproj", "{7FD48CCD-BB44-48FF-84BC-7D9D9C2FEB98}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E889797C-40EF-46DC-A195-BB1F5FF52E7C} = {E889797C-40EF-46DC-A195-BB1F5FF52E7C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsDisplay", "WindowsFormsDisplay\WindowsFormsDisplay.csproj", "{FD55CA34-D1E9-47B9-B5ED-30A7F7403F84}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E889797C-40EF-46DC-A195-BB1F5FF52E7C} = {E889797C-40EF-46DC-A195-BB1F5FF52E7C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureService", "TemperatureService\TemperatureService.csproj", "{E889797C-40EF-46DC-A195-BB1F5FF52E7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FD48CCD-BB44-48FF-84BC-7D9D9C2FEB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD48CCD-BB44-48FF-84BC-7D9D9C2FEB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD48CCD-BB44-48FF-84BC-7D9D9C2FEB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD48CCD-BB44-48FF-84BC-7D9D9C2FEB98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD55CA34-D1E9-47B9-B5ED-30A7F7403F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD55CA34-D1E9-47B9-B5ED-30A7F7403F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD55CA34-D1E9-47B9-B5ED-30A7F7403F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD55CA34-D1E9-47B9-B5ED-30A7F7403F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E889797C-40EF-46DC-A195-BB1F5FF52E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E889797C-40EF-46DC-A195-BB1F5FF52E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E889797C-40EF-46DC-A195-BB1F5FF52E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E889797C-40EF-46DC-A195-BB1F5FF52E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="759a0736-588e-4402-8026-82b7f6469aec" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/TemperatureService/TemperatureService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TemperatureService.xsd" MetadataType="Schema" ID="182b5c7f-3d8c-4691-923d-bdd6bb350326" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TemperatureService.wsdl" MetadataType="Wsdl" ID="5f4f2107-7546-4eb0-a2fd-bbdb493552b0" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?wsdl" />
+    <MetadataFile FileName="TemperatureService1.xsd" MetadataType="Schema" ID="a8005ccd-caaa-4486-964a-bdb6068837ae" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TemperatureService.disco" MetadataType="Disco" ID="415e99c0-b31d-4831-bb02-c6ec32b06f8a" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
