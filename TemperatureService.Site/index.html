@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature</title>
+    <link rel="icon" href="1406773723_131936.ico" type="image/x-icon">
+    <script src="Scripts/jquery-3.1.0.min.js"></script>
+    <script src="Scripts/raphael-2.1.4.min.js"></script>
+    <script src="Scripts/justgage.js"></script>
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        .gauge {
+            width: 500px;
+            height: 500px;
+            display: inline-block;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .message {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="gauge" class="gauge"></div>
+        <div id="message" class="message"></div>
+        <div id="error" class="error"></div>
+    </div>
+    <script>
+        $(function () {
+
+            var gauge = new JustGage({
+                id: 'gauge',
+                title: 'Temperature',
+                label: '°C',
+                min: 20,
+                max: 30,
+                gaugeWidthScale: 0.6,
+                counter: true,
+                hideInnerShadow: true,
+                decimals: 1,
+                pointer: true,
+                customSectors: [
+                    { lo: 20, hi: 22, color: "blue" },
+                    { lo: 22, hi: 24, color: "green" },
+                    { lo: 24, hi: 30, color: "red" }
+                ],
+                levelColorsGradient: false
+            });
+
+            function update() {
+                $.getJSON("http://localhost:9000/api/temperature")
+                    .done(function (data) {
+                        $("#error").hide();
+                        $("#message").text(data.Message);
+                        $("#message").show();
+                        gauge.refresh(data.Temperature);
+                    })
+                    .fail(function (jqxhr, textStatus, error) {
+                        var errorMessage = textStatus + ", " + error;
+                        $("#message").hide();
+                        $("#error").text("Error contacting temperature service");
+                        $("#error").show();
+                        gauge.refresh(null);
+                    });
+            }
+
+            update();
+
+            setInterval(update, 2000);
+        })
+    </script>
+</body>
+</html>

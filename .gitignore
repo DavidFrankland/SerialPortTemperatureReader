@@ -72,13 +72,13 @@ DocProject/Help/Html2
 DocProject/Help/html
 
 # Click-Once directory
-publish
+publish/
 
 # Publish Web Output
 *.Publish.xml
 
 # NuGet Packages Directory
-packages
+packages/
 
 # Windows Azure Build Output
 csx
@@ -88,9 +88,6 @@ csx
 AppPackages/
 
 # Others
-[Bb]in
-[Oo]bj
-sql
 TestResults
 [Tt]est[Rr]esult*
 *.Cache
@@ -99,5 +96,5 @@ ClientBin
 ~$*
 *.dbmdl
 Generated_Code #added for RIA/Silverlight projects
-
 .vs
+logs/

@@ -1,7 +1,6 @@
-﻿using System;
-using System.ServiceModel;
+﻿using System.ServiceModel;
 
-namespace TemperatureService
+namespace TemperatureService.WCF
 {
     [ServiceContract]
     public interface ITemperatureService

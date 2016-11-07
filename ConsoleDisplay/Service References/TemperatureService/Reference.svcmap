@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d284f3a8-9f72-4dab-8b51-b2a75667c06a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="026facf7-d389-47cd-b9f5-06700f74e215" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost/TemperatureService/TemperatureService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="TemperatureService.xsd" MetadataType="Schema" ID="9b48e1f9-0c12-4f0f-a99b-4d111b04fb54" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?xsd=xsd0" />
-    <MetadataFile FileName="TemperatureService.wsdl" MetadataType="Wsdl" ID="8cd1c5fa-f709-4b5c-8f3e-985ad28d92ea" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?wsdl" />
-    <MetadataFile FileName="TemperatureService1.xsd" MetadataType="Schema" ID="ccba8396-c706-4478-ad6a-7cb30f6d40b8" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?xsd=xsd1" />
-    <MetadataFile FileName="TemperatureService.disco" MetadataType="Disco" ID="9397925d-83fe-407f-8816-faf7ae9f5092" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?disco" />
+    <MetadataFile FileName="TemperatureService.xsd" MetadataType="Schema" ID="1024ac1a-3911-404c-8877-e620cd14ea3c" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TemperatureService.wsdl" MetadataType="Wsdl" ID="cbc5f426-faf0-4fbd-b8ac-6a52f4a7e3a7" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?wsdl" />
+    <MetadataFile FileName="TemperatureService1.xsd" MetadataType="Schema" ID="d9cc9622-fa72-42c8-8b85-bd8c2e116f1b" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TemperatureService.disco" MetadataType="Disco" ID="036bb063-5e46-4d2a-b609-f5789dfd4bfc" SourceId="1" SourceUrl="http://localhost/TemperatureService/TemperatureService.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

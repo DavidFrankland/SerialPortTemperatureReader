@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDisplay", "ConsoleDisplay\ConsoleDisplay.csproj", "{7FD48CCD-BB44-48FF-84BC-7D9D9C2FEB98}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E889797C-40EF-46DC-A195-BB1F5FF52E7C} = {E889797C-40EF-46DC-A195-BB1F5FF52E7C}
@@ -11,7 +13,31 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsDisplay", "Wind
 		{E889797C-40EF-46DC-A195-BB1F5FF52E7C} = {E889797C-40EF-46DC-A195-BB1F5FF52E7C}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureService", "TemperatureService\TemperatureService.csproj", "{E889797C-40EF-46DC-A195-BB1F5FF52E7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureService.WCF", "TemperatureService.WCF\TemperatureService.WCF.csproj", "{E889797C-40EF-46DC-A195-BB1F5FF52E7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureService.ConsoleApp", "TemperatureService.ConsoleApp\TemperatureService.ConsoleApp.csproj", "{DADCE299-A660-46DB-8E84-F60F136D1639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureService.Domain", "TemperatureService.Domain\TemperatureService.Domain.csproj", "{F8CE1666-6FF8-4653-B07B-9F8E7E652031}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TemperatureService.Site", "TemperatureService.Site\", "{D88E006F-A1D5-47E2-8716-F44F18EA3F42}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_2972"
+		Debug.AspNetCompiler.PhysicalPath = "TemperatureService.Site\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2972\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_2972"
+		Release.AspNetCompiler.PhysicalPath = "TemperatureService.Site\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2972\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2972"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +57,18 @@ Global
 		{E889797C-40EF-46DC-A195-BB1F5FF52E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E889797C-40EF-46DC-A195-BB1F5FF52E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E889797C-40EF-46DC-A195-BB1F5FF52E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DADCE299-A660-46DB-8E84-F60F136D1639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADCE299-A660-46DB-8E84-F60F136D1639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADCE299-A660-46DB-8E84-F60F136D1639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADCE299-A660-46DB-8E84-F60F136D1639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8CE1666-6FF8-4653-B07B-9F8E7E652031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CE1666-6FF8-4653-B07B-9F8E7E652031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CE1666-6FF8-4653-B07B-9F8E7E652031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CE1666-6FF8-4653-B07B-9F8E7E652031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D88E006F-A1D5-47E2-8716-F44F18EA3F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88E006F-A1D5-47E2-8716-F44F18EA3F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88E006F-A1D5-47E2-8716-F44F18EA3F42}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88E006F-A1D5-47E2-8716-F44F18EA3F42}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
